@@ -1,6 +1,9 @@
 import os
 from tqdm import tqdm
 import openai
+from openai import OpenAI
+
+
 from evaluators.evaluator import Evaluator
 from time import sleep
 import re
@@ -9,7 +12,9 @@ import re
 class ChatGPT_Evaluator(Evaluator):
     def __init__(self, choices, k, api_key,model_name):
         super(ChatGPT_Evaluator, self).__init__(choices, model_name, k)
-        openai.api_key = api_key
+        self.client = OpenAI(api_key=api_key, base_url="https://api.chatanywhere.com.cn")
+        # TODO: The 'openai.base_url' option isn't read in the client API. You will need to pass it when you instantiate the client, e.g. 'OpenAI(base_url="https://api.chatanywhere.com.cn")'
+        # openai.base_url = "https://api.chatanywhere.com.cn"
 
     def format_example(self,line,include_answer=True,cot=False):
         example=line['question']
@@ -72,6 +77,8 @@ class ChatGPT_Evaluator(Evaluator):
                     "content":f"你是一个中文人工智能助手，以下是中国关于{subject_name}考试的单项选择题，请选出其中的正确答案。"
                 }
             ]
+        print(test_df.keys())
+        print(test_df)
         answers = list(test_df['answer'])
         for row_index, row in tqdm(test_df.iterrows(),total=len(test_df)):
             question = self.format_example(row, include_answer=False,)
@@ -83,11 +90,9 @@ class ChatGPT_Evaluator(Evaluator):
             while response is None and timeout_counter<=30:
                 try:
                     sleep(1.5)
-                    response = openai.ChatCompletion.create(
-                        model=self.model_name,
-                        messages=full_prompt,
-                        temperature=0.
-                    )
+                    response = self.client.chat.completions.create(model=self.model_name,
+                    messages=full_prompt,
+                    temperature=0.)
                 except Exception as msg:
                     if "timeout=600" in str(msg):
                         timeout_counter+=1
@@ -97,7 +102,7 @@ class ChatGPT_Evaluator(Evaluator):
             if response==None:
                 response_str=""
             else:
-                response_str = response['choices'][0]['message']['content']
+                response_str = response.choices[0].message.content
             #print(response_str)
             if cot:
               if not few_shot:

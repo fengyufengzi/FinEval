@@ -1,0 +1,13 @@
+id,question,A,B,C,D,answer
+0,对于`http://foo@127.0.0.1:6379@www.baidu.com/ping`，下列哪些组件可能会把其中&quot;127.0.0.1&quot;解析成host？,libcurl,golang,php,nodejs,A
+1,以下哪些方式能绕过SSRF漏洞中对本地地址的检测？,对地址进行编码和变形。,使用外网地址和30x跳转。,使用外网域名和dns rebinding。,其他说法都是。,D
+2,OSI模型中，数据链路层主要负责：,IP地址分配,数据的可靠传输,网络拓扑设计,物理介质的管理,D
+3,在TCP/IP协议中，以下哪个是面向连接的协议？,UDP,HTTP,TCP,IP,C
+4,下列哪个协议用于将域名解析为IP地址？,FTP,DNS,SNMP,DHCP,B
+5,下列哪个协议用于在网络中动态分配IP地址？,DNS,HTTP,DHCP,FTP,C
+6,在网络安全中，下列哪个协议通常用于加密数据传输？,SSL/TLS,ICMP,SMTP,POP3,A
+7,在TCP/IP协议中，以下哪个端口用于安全的SSH连接？,21,22,80,443,B
+8,在网络中，下列哪个协议用于将电子邮件从客户端发送到服务器？,SMTP,POP3,IMAP,HTTP,A
+9,在TCP/IP协议中，以下哪个协议用于将电子邮件从服务器传输到客户端？,SMTP,POP3,FTP,HTTP,B
+10,在网络通信中，下列哪个协议用于通过加密保护数据的机密性和完整性？,FTP,HTTPS,SNMP,Telnet,B
+11,下列哪个协议用于通过安全套接层（SSL）或传输层安全性（TLS）提供加密和数据完整性？,FTP,SMTP,SNMP,HTTPS,D

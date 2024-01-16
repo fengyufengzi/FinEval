@@ -12,7 +12,9 @@ choices = ["A", "B", "C", "D"]
 def main(args, evaluator,take):
     assert os.path.exists("subject_mapping.json"), "subject_mapping.json not found!"
     with open("subject_mapping.json") as f:
-        subject_mapping = json.load(f)
+        #subject_mapping = json.load(f)
+        subject_mapping = {'cybersecurity': ['cybersecurity', '网络安全', 'Security']}
+        print(subject_mapping)
     filenames = os.listdir("data/val")
     subject_list = [val_file.replace("_val.csv","") for val_file in filenames]
     accuracy, summary = {}, {}
@@ -31,6 +33,7 @@ def main(args, evaluator,take):
         test_file_path=os.path.join('data/test', f'{subject_name}_test.csv')
 
         val_df=pd.read_csv(val_file_path) if args.do_test is False else pd.read_csv(test_file_path)
+        print(val_file_path)
         dev_df=pd.read_csv(dev_file_path) if args.few_shot else None
 
         correct_ratio, answers = evaluator.eval_subject(subject_name, val_df, dev_df,
@@ -55,10 +58,11 @@ def main(args, evaluator,take):
     total_num = 0
     total_correct = 0
     summary['grouped'] = {
-        "Accounting":{"correct":0.0,"num":0},
-        "Finance":{"correct":0.0,"num":0},
-        "Economy":{"correct":0.0,"num":0},
-        "Certificate":{"correct":0.0,"num":0}
+        # "Accounting":{"correct":0.0,"num":0},
+        # "Finance":{"correct":0.0,"num":0},
+        # "Economy":{"correct":0.0,"num":0},
+        # "Certificate":{"correct":0.0,"num":0},
+        "Security": {"correct": 0.0, "num": 0}
         }
     for subj, info in subject_mapping.items():
         group = info[2]

@@ -168,6 +168,10 @@
 		"monetary_finance",
 		"\u8d27\u5e01\u91d1\u878d\u5b66",
 		"Finance"
+	],
+	"cybersecurity": [
+		"cybersecurity",
+		"\u7f51\u7edc\u5b89\u5168",
+		"Security"
 	]
-
 }

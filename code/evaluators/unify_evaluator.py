@@ -202,7 +202,10 @@ class unify_Evaluator(Evaluator):
 
     def format_example(self, line, include_answer=True, cot=False, with_prompt=False):
         example = line['question']
+        print("line----:",line)
+        print("Example----:",example,type(example))
         for choice in self.choices:
+            print("Choice----:",choice,type(choice))
             example += f'\n{choice}. {line[f"{choice}"]}'
         if include_answer:
             if cot:
