@@ -59,7 +59,8 @@ def main(args, evaluator,take):
         "Accounting": {"correct":0.0,"num":0},
         "Certificate": {"correct": 0.0, "num": 0},
         "Economy": {"correct": 0.0,"num":0},
-        "Finance": {"correct": 0.0, "num": 0}
+        "Finance": {"correct": 0.0, "num": 0},
+        "Security": {"correct": 0.0, "num": 0}
     }
     for subj, info in subject_mapping.items():
         group = info[2]
