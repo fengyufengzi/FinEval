@@ -4,7 +4,7 @@ export KMP_DUPLICATE_LIB_OK=TRUE
 
 
 # input your openai api key
-#openai_key=sk-QFG0z5ZdaRQZ08YOoJOcKPeKCqDQiX2BEKMAqFQWr4N1Heq1
+
 
 exp_name=chatgpt-3.5
 exp_date=$(date +"%Y%m%d%H%M%S")
