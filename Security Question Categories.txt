@@ -1,0 +1,235 @@
+分类：
+1.网络安全运营
+2.威胁情报与分析
+3.网络攻击与APT攻击
+4.应用程序和网页安全
+5.事故响应与取证
+6.漏洞评估与渗透测试
+7.治理风险和合规
+8.数据保护与隐私
+9.安全架构与工程
+10.身份和访问管理
+
+
+{
+    "Cybersecurity Operations": [
+        "cybersecurity_operations",
+        "\\u7f51\\u7edc\\u5b89\\u5168\\u8fd0\\u8425",
+        "CyberSecurity"
+    ],
+    "Threat Intelligence and Analysis": [
+        "threat_intelligence_and_analysis",
+        "\\u5a01\\u80c1\\u60c5\\u62a5\\u4e0e\\u5206\\u6790",
+        "CyberSecurity"
+    ],
+    "Network Security": [
+        "network_security",
+        "\\u7f51\\u7edc\\u5b89\\u5168",
+        "CyberSecurity"
+    ],
+    "Application and Web Security": [
+        "application_and_web_security",
+        "\\u5e94\\u7528\\u7a0b\\u5e8f\\u548c\\u7f51\\u9875\\u5b89\\u5168",
+        "CyberSecurity"
+    ],
+    "Incident Response and Forensics": [
+        "incident_response_and_forensics",
+        "\\u4e8b\\u4ef6\\u54cd\\u5e94\\u4e0e\\u53d6\\u8bc1",
+        "CyberSecurity"
+    ],
+    "Vulnerability Assessment and Penetration Testing": [
+        "vulnerability_assessment_and_penetration_testing",
+        "\\u6f0f\\u6d1e\\u8bc4\\u4f30\\u4e0e\\u6e17\\u900f\\u6d4b\\u8bd5",
+        "CyberSecurity"
+    ],
+    "Data Protection and Privacy": [
+        "data_protection_and_privacy",
+        "\\u6570\\u636e\\u4fdd\\u62a4\\u4e0e\\u9690\\u79c1",
+        "CyberSecurity"
+    ],
+    "Governance, Risk, and Compliance": [
+        "governance_risk_and_compliance",
+        "\\u6cbb\\u7406\\u3001\\u98ce\\u9669\\u548c\\u5408\\u89c4",
+        "CyberSecurity"
+    ],
+    "Security Architecture and Engineering": [
+        "security_architecture_and_engineering",
+        "\\u5b89\\u5168\\u67b6\\u6784\\u4e0e\\u5de5\\u7a0b",
+        "CyberSecurity"
+    ],
+    "Identity and Access Management": [
+        "identity_and_access_management",
+        "\\u8eab\\u4efd\\u548c\\u8bbf\\u95ee\\u7ba1\\u7406",
+        "CyberSecurity"
+    ]
+}
+
+
+网络安全运营:
+
+问: 网络安全运营的主要目标是什么？
+
+A) 市场分析
+B) 财务报告
+C) 保护信息资产
+D) 销售管理
+答案: C) 保护信息资产
+
+问: 在网络安全运营中常用于监控网络流量的工具是什么？
+
+A) 电子表格软件
+B) 网络入侵检测系统 (NIDS)
+C) 文字处理器
+D) 数据库管理系统
+答案: B) 网络入侵检测系统 (NIDS)
+
+威胁情报与分析:
+
+问: 网络安全中威胁情报的主要目的是什么？
+
+A) 财务预测
+B) 预测股价
+C) 识别潜在安全威胁
+D) 员工绩效评估
+答案: C) 识别潜在安全威胁
+问: 以下哪个是威胁情报的来源？
+
+A) 社交媒体
+B) 新闻网站
+C) 暗网
+D) 所有以上
+答案: D) 所有以上
+
+网络攻击与APT攻击:
+问: 保护无线网络的常用方法是什么？
+
+A) 使用强密码
+B) 拔掉路由器
+C) 降低信号强度
+D) 避免软件更新
+答案: A) 使用强密码
+问: 下面哪个是网络安全攻击的类型？
+
+A) 钓鱼攻击
+B) SQL注入
+C) 跨站脚本攻击
+D) 所有以上
+答案: D) 所有以上
+
+应用程序和网页安全:
+
+问: 网页应用安全的主要目标是什么？
+
+A) 提升网站速度
+B) 保护网页应用免受攻击
+C) 增加网站流量
+D) 提高图形设计
+答案: B) 保护网页应用免受攻击
+
+问: 网页应用中的常见漏洞是什么？
+
+A) 无效的SEO
+B) 内容质量差
+C) SQL注入
+D) 流量低
+答案: C) SQL注入
+
+事故响应与取证:
+
+问: 有效的事故响应计划的第一步是什么？
+
+A) 数据恢复
+B) 识别事故
+C) 公共关系
+D) 法律行动
+答案: B) 识别事故
+问: 在网络安全中，数字取证主要用于什么目的？
+
+A) 调查安全事故
+B) 图形设计
+C) 网站开发
+D) 社交媒体营销
+答案: A) 调查安全事故
+
+漏洞评估与渗透测试:
+
+问: 渗透测试的目标是什么？
+
+A) 测试软件可用性
+B) 识别安全漏洞
+C) 评估员工绩效
+D) 市场研究
+答案: B) 识别安全漏洞
+问: 漏洞扫描用于：
+
+A) 扫描文档
+B) 检测网络漏洞
+C) 监控电子邮件流量
+D) 跟踪网页浏览量
+答案: B) 检测网络漏洞
+
+数据保护与隐私:
+
+问: 像GDPR这样的数据保护法律主要关注什么？
+
+A) 促进销售
+B) 保护个人数据
+C) 鼓励电子邮件营销
+D) 降低软件成本
+答案: B) 保护个人数据
+问: 在数据保护中，加密用于：
+
+A) 加速数据传输
+B) 保护数据免受未授权访问
+C) 减少数据存储需求
+D) 增强数据分析
+答案: B) 保护数据免受未授权访问
+
+治理、风险和合规:
+
+问: 网络安全中的合规性是指什么？
+
+A) 遵守行业标准和规定
+B) 销售目标
+C) 网站流量目标
+D) 社交媒体互动
+答案: A) 遵守行业标准和规定
+问: 网络安全的风险管理包括：
+
+A) 识别和减轻潜在的网络风险
+B) 投资策略
+C) 员工招聘
+D) 营销活动
+答案: A) 识别和减轻潜在的网络风险
+
+安全架构与工程:
+问: IT中的安全架构是指：
+
+A) 办公空间的物理设计
+B) 建筑的结构设计
+C) 安全系统的设计和实施
+D) 营销图形设计
+答案: C) 安全系统的设计和实施
+问: 安全工程的目的是：
+
+A) 创造美观的设计
+B) 开发健壮和安全的系统
+C) 提高员工士气
+D) 增强企业品牌
+答案: B) 开发健壮和安全的系统
+
+身份和访问管理:
+问: 身份和访问管理 (IAM) 的主要目的是什么？
+
+A) 确保用户被正确认证
+B) 改善网站设计
+C) 增加销量
+D) 增强社交媒体影响力
+答案: A) 确保用户被正确认证
+问: 多因素认证 (MFA) 在IAM中用于：
+
+A) 降低系统速度
+B) 降低运营效率
+C) 增加访问安全性
+D) 降低IT成本
+答案: C) 增加访问安全性
